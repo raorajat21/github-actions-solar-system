@@ -68,6 +68,8 @@ jobs:
               path: coverage
               retention-days: 5
     docker:
+         permissions:
+           packages: write
          name: Docker
          runs-on: ubuntu-latest
          needs: 
